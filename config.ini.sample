@@ -1,0 +1,10 @@
+; DEV or PROD
+env=DEV
+
+[DEV]
+dbfilepath="pat/to/your/dev/database"
+baseUri="/listes"
+
+[PROD]
+dbfilepath="pat/to/your/prod/database"
+baseUri="listes"

@@ -1,0 +1,31 @@
+<?php
+/** @var array $args */
+list(
+    $fabAddItem,
+    $backButton,
+    $removeButton,
+    $addItemModal,
+    $removeItemModal,
+    $deleteListModal,
+    $listWidget,
+    $itemWidgets
+    ) = $args;
+
+echo $fabAddItem->getHtml();
+echo $addItemModal->getHtml();
+echo $removeItemModal->getHtml();
+echo $deleteListModal->getHtml();
+?>
+    <ul class="collection with-header">
+        <?php
+        echo $listWidget->getHtml();
+        if (!empty($itemWidgets) && $itemWidgets > -1) {
+            foreach ($itemWidgets as $itemWidget) {
+                echo $itemWidget->getHtml();
+            }
+        }
+        ?>
+    </ul>
+<?php
+echo $backButton->getHtml();
+echo $removeButton->getHtml();

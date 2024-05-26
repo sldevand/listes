@@ -1,0 +1,18 @@
+<?php
+/** @var array $args */
+list($fabAddList, $addListmodal, $categoriesWidgets) = $args;
+
+echo $fabAddList->getHtml();
+echo $addListmodal->getHtml();
+
+?>
+
+<ul class="collection with-header">
+    <?php if (!empty($categoriesWidgets) && $categoriesWidgets > -1) : ?>
+        <?php foreach ($categoriesWidgets as $categoriesWidget) : ?>
+            <?= $categoriesWidget->getHtml() ?>
+        <?php endforeach; ?>
+    <?php else : ?>
+        <li> No Categories to display</li>
+    <?php endif; ?>
+</ul>

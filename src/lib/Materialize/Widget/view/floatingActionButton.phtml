@@ -1,0 +1,10 @@
+<?php if ($this->fixed()) : ?>
+<div class="fixed-action-btn">
+    <?php endif; ?>
+    <a id="<?= $this->id() ?>" class="btn-floating btn-large waves-effect waves-light btn">
+        <?= $this->getIconHtml() ?>
+        button
+    </a>
+    <?php if ($this->fixed()) : ?>
+</div>
+<?php endif; ?>

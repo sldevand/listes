@@ -1,0 +1,17 @@
+<?php
+/** @var array $args*/
+$decoration = $args[0];
+$color = $args[1];
+?>
+
+<li id="<?= $this->item->id() ?>"
+    class="collection-item row"
+    style="text-decoration:<?= $decoration ?> ; color:<?= $color ?>;"
+>
+    <div class="col s10">
+        <span class="item-content"><?= htmlspecialchars($this->item->getContent()) ?></span>
+    </div>
+    <div class="col s2">
+        <a id="<?= $this->item->id() ?>"><i class="material-icons right delete-icon">delete</i></a>
+    </div>
+</li>
