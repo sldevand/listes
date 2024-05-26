@@ -9,7 +9,7 @@
 
         <script src="js/jquery-3.2.1.js"></script>
         <script src="js/materialize.js"></script>
-
+        <link rel="manifest" href="manifest/manifest.json">
         <title> <?php echo $siteTitle; ?> </title>
     </head>
 
