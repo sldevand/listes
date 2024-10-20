@@ -4,7 +4,6 @@
     "theme_color": "#333333",
     "background_color": "#333333",
     "display": "standalone",
-    "start_url": "todolist/index.php",
     "icons": [
         {
             "src": "img/liste.png",
